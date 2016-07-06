@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mail Box</title>
+	<link rel="stylesheet" type="text/css" href="mail.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="mail.js"></script>
+</head>
+<body>
+
+	<div >
+		<h1 style="color:purple"><strong>Mail</strong></h1>
+	</div>
+	<div style="background-color:#F0FFFF; width:20%; text-align:center; margin-right:5px; float:left;">
+		
+		<div ><input type="submit" id="compose" value="Compose"  > </div>
+		<div ><input type="submit" class="boxed" id="inbox" value="Inbox"> </div>
+		<div ><input type="submit" class="boxed" value="Sent"  id="sent"></div>
+		<div ><input type="submit" class="boxed" value="Draft"  id="draft"></div>
+		<div ><input type="submit" class="boxed" value="Trash"  id="trash"></div>
+	</div >
+	<div>
+	<div style="background-color:#F0FFFF;" id = "titlemail">
+		<input type="checkbox" id="all" onClick="toggle()"><font id="all1">Check all</font>
+		<input type="submit" id="refresh" value="refresh">
+		<input type="submit" id="delete" value="Delete">
+		<input type="submit" id="restore" value="Restore">
+		<input type="submit" id="back" value="Back">
+		<!--<input type="submit" id="delete" value="Open">-->
+	</div >
+			
+	<div id = "mailtable" >
+		<!--<table >
+			
+		</table>-->
+	
+	</div>
+	
+	</div>
+	
+	
+	
+	
+	<div class="composebox" >
+		<div >
+			Mail Id : <input type="textbox" id="mid" style="background-color:#F0FFFF;margin-left:5px;margin-top:5px; width:70%;">
+			<input type="submit" id="close" value="x" style="float:right">
+		</div>
+		<div >
+			Subject : <input type="textbox" id="subject" style="background-color:#F0FFFF;margin-left:5px;margin-top:5px; width:70%;">
+		</div>
+		<div>
+			<textarea rows="12" id="txt" style="background-color:#F0FFFF;margin-left:5px;margin-top:5px; width:90%;heigth:70%">
+			</textarea>
+		</div>
+		<div>
+			<input type="submit" id="send" value="Send" style="float:right; margin-top:5px;margin-bottom:5px;margin-right:10px;">
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.boxed{
+	margin-left:5%;
+	width:90%;
+	heigth:20%;
+	text-align:center;
+	background-color:#cc0000;
+	border: 1px solid black ;
+	margin-bottom:5px;
+	margin-top:5px
+	
+}
+
+#compose{
+	margin-left:5%;
+	width:90%;
+	heigth:20%;
+	text-align:center;
+	background-color:white;
+	border: 1px solid black ;
+	margin-bottom:10px;
+	margin-top:5px
+	text:
+}
+/*.menu1{
+	background-color:#F0FFFF;
+	width:20%;
+	text-align:center;
+	border: 1px solid black ;
+}*/
+.box1{
+	width:80%;
+	border: 1px solid black ;
+	
+}
+.mailbox{
+	width:70%;
+	border:1px solid black;
+	float:right;
+}
+.mails{
+	margin-left:10px;
+	width:80%;
+	border:1px solid black;
+	heigth:80%;
+}
+.box2{
+	margin-left:5%;
+	width:30%;
+	text-align:center;
+	background-color:#808080;
+	border: 1px solid black ;
+	margin-bottom:5px;
+	margin-top:5px;
+	float:left;
+}
+.composebox{
+	position:absolute;
+	top:50%;
+	left:70%;
+	width:30%;
+	height:50%;
+	border: 1px solid black
+	
+}
+#txtbox{
+	margin-left:10px;
+	width:50%;
+	heigth:80%;
+	border: 1px solid black;
+	margin-top:5px
+}
+.chk{
+	margin-bottom:8px;
+}
+.chkbox{
+	width:20px;
+	margin-top:5px;
+	
+	margin-left:10px;
+	float:left;
+}
+.mbox{
+	margin-left:5px;
+	margin-top:5px;
+	
+	width:80%;
+}
+
+
