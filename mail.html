@@ -2,25 +2,27 @@
 <html>
 <head>
 	<title>Mail Box</title>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
 	<link rel="stylesheet" type="text/css" href="mail.css" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 	<script type="text/javascript" src="mail.js"></script>
 </head>
-<body>
+<body style="margin-top:50px">
 
 	<div >
-		<h1 style="color:purple"><strong>Mail</strong></h1>
-	</div>
-	<div style="background-color:#F0FFFF; width:20%; text-align:center; margin-right:5px; float:left;">
 		
+	</div>
+	<div style="width:15%; text-align:center; margin-right:5px; float:left;">
+		<div style="color:red; text-align:center"><font size=5><b>Mail</b></font></div>
 		<div ><input type="submit" id="compose" value="Compose"  > </div>
-		<div ><input type="submit" class="boxed" id="inbox" value="Inbox"> </div>
-		<div ><input type="submit" class="boxed" value="Sent"  id="sent"></div>
-		<div ><input type="submit" class="boxed" value="Draft"  id="draft"></div>
-		<div ><input type="submit" class="boxed" value="Trash"  id="trash"></div>
+		
+		<div id="inbox" class="boxed" ><font size=5>Inbox</font> </div>
+		<div id="sent" class="boxed" ><font size=5>Sent</font> </div>
+		<div id="draft" class="boxed" ><font size=5>Draft</font> </div>
+		<div id="trash" class="boxed" ><font size=5>Trash</font> </div>
 	</div >
 	<div>
-	<div style="background-color:#F0FFFF;" id = "titlemail">
+	<div style="border-bottom:1px solid gray; " id = "titlemail">
 		<input type="checkbox" id="all" onClick="toggle()"><font id="all1">Check all</font>
 		<input type="submit" id="refresh" value="refresh">
 		<input type="submit" id="delete" value="Delete">
@@ -28,7 +30,10 @@
 		<input type="submit" id="back" value="Back">
 		<!--<input type="submit" id="delete" value="Open">-->
 	</div >
-			
+		
+	<div id = "mailtable1" >
+	
+	</div>
 	<div id = "mailtable" >
 		<!--<table >
 			
@@ -42,19 +47,22 @@
 	
 	
 	<div class="composebox" >
-		<div >
-			Mail Id : <input type="textbox" id="mid" style="background-color:#F0FFFF;margin-left:5px;margin-top:5px; width:70%;">
-			<input type="submit" id="close" value="x" style="float:right">
+		<div style="background-color:gray;">
+			<font color="white">New Message</font>
+			<input type="submit" id="close" value="x"  style="float:right">
 		</div>
 		<div >
-			Subject : <input type="textbox" id="subject" style="background-color:#F0FFFF;margin-left:5px;margin-top:5px; width:70%;">
+			 <input type="textbox" id="mid"   style="color:#D3D3D3;margin-left:5px;margin-top:5px; width:95%;">
+		</div>
+		<div >
+			<input type="textbox" id="subject" style="color:#D3D3D3;margin-left:5px;margin-top:5px; width:95%;" >
 		</div>
 		<div>
-			<textarea rows="12" id="txt" style="background-color:#F0FFFF;margin-left:5px;margin-top:5px; width:90%;heigth:70%">
+			<textarea rows="12" id="txt" style="color:#D3D3D3;margin-left:5px;margin-top:5px; width:95%;heigth:80%">
 			</textarea>
 		</div>
 		<div>
-			<input type="submit" id="send" value="Send" style="float:right; margin-top:5px;margin-bottom:5px;margin-right:10px;">
+			<input type="submit" id="send" value="Send" style="float:right; margin-top:5px;margin-right:7%;color:white;background-color:blue;">
 		</div>
 	</div>
 </body>
